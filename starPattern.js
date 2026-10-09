@@ -99,7 +99,7 @@ so, technically both loops will run for same iteration just the way of writing i
 *****
 */
 // 6th program 
-for (let i = 1; i <= 5; i++) { // no. of rows
+/*for (let i = 1; i <= 5; i++) { // no. of rows
     let row = "";
     for (let j = 0; j < 5 - i; j++) {
         row = row + " ";
@@ -109,5 +109,54 @@ for (let i = 1; i <= 5; i++) { // no. of rows
     }
     console.log(row);
 
-}
+}*/
+// 7th pattern
+/*
+1
+10
+101
+1010
+10101
+*/
+// 7th program
+/*for (let i = 1; i <= 5; i++) { // no. of rows
+    let row = "";
+    let toggle = 1;
+    for (let j = 0; j < i; j++) {
+        row = row + toggle;
+        if (toggle === 1) {
+            toggle = 0;
+        } else {
+            toggle = 1;
+        }
+    }
 
+
+    console.log(row);
+}
+*/
+
+// 8th pattern
+/*
+1
+01
+010
+1010
+10101
+*/
+// 8th program
+let toggle = 1;
+for (let i = 1; i <= 5; i++) { // no. of rows
+    let row = "";
+    for (let j = 0; j < i; j++) {
+        row = row + toggle;
+        if (toggle === 1) {
+            toggle = 0;
+        } else {
+            toggle = 1;
+        }
+    }
+
+
+    console.log(row);
+}
