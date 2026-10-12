@@ -12,7 +12,7 @@ Binary Search: Best Case: O(1)
               Worst Case: O(log(n)) // where n is size of array
 */
 
-// Notation is nothing just a symbol 
+// Notation is nothing just a symbol
 
 /* Different Time Complexities
 1. O(n)
@@ -21,6 +21,9 @@ Binary Search: Best Case: O(1)
 4. O(n log n) // merge sort
 5. O(n3) // 3 nested loops
 6. O(2n) // 2 to pow n operations
-7. O(n!) // factorial operations 
+7. O(n!) // factorial operations
 8. O(1) // Constant time operations
 */
+ 
+// effeciency order of time complexities of Big O notation [Worst Case]
+// O(1)> O(log n) > O(n) > O( n log n) > O(n2) > O(2n) > O(n!)
