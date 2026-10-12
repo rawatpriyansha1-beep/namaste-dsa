@@ -2,7 +2,11 @@
 // 123 => 1+2+3 => 6
 
 function countDigit(num) { //123
+    num = Math.abs(num);// converts negative number to positive or handling negative numbers
     let count = 0;
+    if (num === 0) {
+        return 1;
+    }
     while (num > 0) {
         count++;
         num = Math.floor(num / 10);
@@ -10,6 +14,8 @@ function countDigit(num) { //123
     return count;
 }
 console.log("count of digit of number is :", countDigit(1234567890));
+console.log("count of digit of number is :", countDigit(0));
+console.log("count of digit of number is :", countDigit(-14320));
 /*
 function sumDigit(num) {
     let count = 0;
